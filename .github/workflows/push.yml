@@ -14,4 +14,6 @@ jobs:
           distribution: 'full'
           version: '7.7'
       - name: Run Tests
-        run: raco test tests/test-main.rkt
+        run: |
+          raco pkg install
+          raco test tests/test-main.rkt
